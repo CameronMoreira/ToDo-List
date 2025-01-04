@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<!-- I'm learning HTML, as I code, help me explain what I'm coding by writing additional comments-->
+
+<html lang="en"></html> <!-- This is the opening tag of the HTML document, it tells the browser that the document is written in English -->
+<head>
+    <meta charset="UTF-8"> <!-- This tag specifies the character encoding for the HTML document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- This tag sets the width of the page to follow the screen-width of the device and sets the initial zoom level when the page is first loaded -->
+    <Title>To-Do List</Title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* This tag specifies the font family of the text in the body */
+            text-align: center; /* This tag specifies the alignment of the text in the body */
+            padding: 50px; /* This tag specifies the padding of the body */
+        }
+       #taskInput{
+        padding: 10px; /* This tag specifies the padding of the task input */
+        width: 70%; /* This tag specifies the width of the task input */
+       }
+       #addButton {
+        padding: 10px; /* This tag specifies the padding of the add button */
+       }
+       ul {
+        list-style-type: none; /* This tag specifies the list style type of the unordered list */
+        padding: 0; /* This tag specifies the padding of the unordered list */
+       }
+       li {
+      display: flex; /* This tag specifies the display of the list item */
+      justify-content: space-between;  /* This tag specifies the alignment of the list item */
+      padding: 10px; /* This tag specifies the padding of the list item */
+      border: 1px solid #ccc; /* This tag specifies the border of the list item */
+      margin: 5px auto; /* This tag specifies the margin of the list item */
+      width: 80%; /* This tag specifies the width of the list item */
+       }
+       .deleteButton {
+        background-color: red; /* This tag specifies the background color of the delete button */
+        color: white; /* This tag specifies the color of the delete button */
+        padding: 5px; /* This tag specifies the padding of the delete button */
+        border: none; /* This tag specifies the border of the delete button */
+        cursor: pointer; /* This tag specifies the cursor of the delete button */
+    }
+    </style>
+
+    <body>
+        <h1>To-Do List</h1> <!-- This tag specifies the heading of the page -->
+        <input type="text" id="taskInput" placeholder="Enter a task"> <!-- This tag specifies the input field for the task -->
+        <button id="addButton">Add</button> <!-- This tag specifies the button to add the task -->
+        <ul id="taskList"></ul> <!-- This tag specifies the unordered list of the tasks --> 
+    </body>
+</head>
+</html>
