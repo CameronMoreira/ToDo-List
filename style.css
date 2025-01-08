@@ -80,6 +80,43 @@ li {
     background-color: #ff6666; /* Lighter red on hover */
 }
 
+/* Centered alignment for consistency */
+.taskDateInput {
+    display: block;
+    margin: 10px auto; /* Adds space around the input and centers it */
+    padding: 5px; /* Adds padding for a better click/touch experience */
+    font-size: 14px; /* Adjusts text size for readability */
+    border: 1px solid #4d88ff;
+    border-radius: 4px; /* Rounded corners */
+    background-color: #2033b0; /* Light background for a modern feel */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+    font-family: 'Arial', sans-serif; /* Consistent font */
+  }
+  
+  /* Add hover effect for better interactivity */
+  .taskDateInput:hover {
+    border-color: #007bff; /* Change border to a highlighted color */
+    background-color: #f0f8ff; /* Slightly lighter background */
+  }
+  
+  /* Add focus effect to indicate it's active */
+  .taskDateInput:focus {
+    border-color: #0056b3; /* Darker highlight */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Glow effect */
+    outline: none; /* Removes default browser outline */
+  }
+
+  /* Add styling for dateSpan */
+    .dateSpan {
+        color: #ffffff;
+        font-size: 1em;
+
+       /*Adjust margins so that it looks better aligned with taskDateInput */
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+  
+
 /* Responsive design */
 @media (max-width: 768px) {
     #taskInput {
